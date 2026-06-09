@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TITLE -->
+    <TextView
+        android:text="📦 BMSCE LostFound"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- CARD -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:padding="22dp"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- EMAIL -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="🎓 Enter BMSCE Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/input_bg"
+            android:padding="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:layout_marginBottom="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- PASSWORD WITH TOGGLE -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/input_bg"
+            android:padding="4dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:hint="🔒 Enter Password"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:padding="12dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/btnTogglePassword"
+                android:src="@android:drawable/ic_menu_view"
+                android:padding="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <!-- REMEMBER ME -->
+        <CheckBox
+            android:id="@+id/cbRemember"
+            android:text="Remember Me"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- LOGIN BUTTON -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:background="@drawable/button_green"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- 🔥 REGISTER LINK (THIS FIXES YOUR ERROR) -->
+        <TextView
+            android:id="@+id/tvRegister"
+            android:text="New user? Register"
+            android:textColor="#60A5FA"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

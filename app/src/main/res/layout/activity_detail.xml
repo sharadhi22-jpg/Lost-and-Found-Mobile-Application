@@ -1,0 +1,113 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- CARD -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/card_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- IMAGE -->
+            <ImageView
+                android:id="@+id/imgItem"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="10dp"
+                android:background="#E5E7EB"/>
+
+            <!-- NAME -->
+            <TextView
+                android:id="@+id/tvName"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- DESCRIPTION -->
+            <TextView
+                android:id="@+id/tvDesc"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"/>
+
+            <!-- CHAT / RESPONSES -->
+            <TextView
+                android:id="@+id/tvChat"
+                android:text="No messages yet"
+                android:textColor="@color/text_secondary"
+                android:background="#1F2937"
+                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/etMsg"
+                android:hint="Type your message..."
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- BUTTON ROW -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- SEND -->
+                <Button
+                    android:id="@+id/btnSend"
+                    android:text="Send"
+                    android:textSize="12sp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#3B82F6"
+                    android:textColor="#FFFFFF"/>
+
+                <!-- RECEIVED -->
+                <Button
+                    android:id="@+id/btnReceived"
+                    android:text="Received"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#22C55E"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

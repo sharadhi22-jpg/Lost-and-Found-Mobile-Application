@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- HEADER -->
+        <TextView
+            android:text="📦 Add Lost / Found Item"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- CARD -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="18dp"
+            android:elevation="8dp"
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/etName"
+                android:hint="Item Name"
+                android:background="@drawable/input_bg"
+                android:padding="14dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Description -->
+            <EditText
+                android:id="@+id/etDesc"
+                android:hint="Description"
+                android:background="@drawable/input_bg"
+                android:minLines="2"
+                android:padding="14dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Location -->
+            <EditText
+                android:id="@+id/etLocation"
+                android:hint="📍 Enter Location"
+                android:background="@drawable/input_bg"
+                android:padding="14dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Date -->
+            <EditText
+                android:id="@+id/etDate"
+                android:hint="📅 Select Date"
+                android:background="@drawable/input_bg"
+                android:focusable="false"
+                android:padding="14dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Time -->
+            <EditText
+                android:id="@+id/etTime"
+                android:hint="⏰ Select Time"
+                android:background="@drawable/input_bg"
+                android:focusable="false"
+                android:padding="14dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/etPhone"
+                android:hint="📞 Phone Number"
+                android:inputType="phone"
+                android:background="@drawable/input_bg"
+                android:padding="14dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:layout_marginBottom="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Radio -->
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_marginBottom="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioLost"
+                    android:text="Lost"
+                    android:textColor="#EF4444"/>
+
+                <RadioButton
+                    android:id="@+id/radioFound"
+                    android:text="Found"
+                    android:textColor="#10B981"/>
+            </RadioGroup>
+
+            <!-- Upload -->
+            <Button
+                android:id="@+id/btnImage"
+                android:text="📷 Upload Image"
+                android:textAllCaps="false"
+                android:background="@drawable/button_blue"
+                android:textColor="#FFFFFF"
+                android:padding="14dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/imgPreview"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/card_bg"
+                android:padding="6dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Save -->
+            <Button
+                android:id="@+id/btnSave"
+                android:text="Save Item"
+                android:textAllCaps="false"
+                android:background="@drawable/button_green"
+                android:textColor="#FFFFFF"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

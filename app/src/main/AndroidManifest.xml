@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lostfoundapp">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/Theme.LostFoundApp">
+
+        <!-- LOGIN (LAUNCH SCREEN) -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+        <!-- REGISTER -->
+        <activity android:name=".activities.RegisterActivity" />
+
+        <!-- DASHBOARD -->
+        <activity android:name=".activities.DashboardActivity" />
+
+        <!-- LOST ITEMS -->
+        <activity android:name=".activities.LostActivity" />
+
+        <!-- FOUND ITEMS -->
+        <activity android:name=".activities.FoundActivity" />
+
+        <!-- ADD ITEM -->
+        <activity android:name=".activities.AddItemActivity" />
+
+        <!-- ITEM DETAIL -->
+        <activity android:name=".activities.ItemDetailActivity" />
+
+    </application>
+
+</manifest>

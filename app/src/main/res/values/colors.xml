@@ -1,0 +1,16 @@
+<resources>
+    <color name="primary">#4CAF50</color> <!-- Green -->
+    <color name="primaryDark">#388E3C</color>
+    <color name="accent">#FFC107</color> <!-- Yellow -->
+    <color name="background">#F5F5F5</color>
+    <color name="card">#FFFFFF</color>
+    <color name="textPrimary">#212121</color>
+    <color name="lost_red">#D32F2F</color>
+    <color name="found_green">#2E7D32</color>
+    <color name="bg_color">#0F172A</color>
+    <color name="card_color">#1E293B</color>
+    <color name="text_primary">#F1F5F9</color>
+    <color name="text_secondary">#CBD5F5</color>
+    <color name="button_blue">#38BDF8</color>
+    <color name="button_green">#4ADE80</color>
+</resources>
